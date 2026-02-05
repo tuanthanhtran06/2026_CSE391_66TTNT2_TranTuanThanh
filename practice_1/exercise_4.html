@@ -6,6 +6,70 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form >
+        <h1>Basic Info</h1>
+        
+        Employee ID: 9 <br><br>
+        Last Name: Dodsworth<br><br>
+        First Name: <input type="text" name="fname" value="Anne"><br><br>
+        <label display="flex">
+            Gender
+         <input type="radio" name="gender" value=" Male">Male
+         <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value=" XXXX">XXXX
+        <input type="radio" name="gender" value=" ZZZZ">ZZZZ
+        </label><br><br>
+        Title <input type="text" name="title" value="Sales Representative"><br><br>
+        sunffix <input type="text" name="sunfifix" value="Ms."><br><br>
+        Birth Date <input type="date"  name="bdate" value="1969-07-02" ><br><br>
+        Hire Date <input type="date" name="hdate" value="1994-11-15"><br><br>
+        SSN # (if applicable) <input type="text" name="ssn" value=""><br><br>
+        Reports to 
+        <select name="reportsto" >
+            <option value="Buchanan">Buchanan</option>
+            <option value="hehe">hehe</option>
+            <option value="oke">oke</option>
+        </select><br><br>
+
+        <h1>Contact Info</h1>
+
+
+        Email <input type="email" name="email" placeholder="name@examble.com"><br><br>
+        Address <input type="text" name="address" value="7 Houndstooth Rd."><br><br>
+        City <input type="text" name="city" value="London"><br><br>
+        Region <input type="text" name="region" value=""><br><br>
+        Postal Code <input type="text" name="postalcode" value="WG2 7LT"><br><br>   
+        Country
+        <select name="country">
+            <option value="Russian Federation">Russian Federation</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+        US home phone <input type="tel" name="usphone" value="(234)234-2342"><br><br>
+        Photo <input type="text" name="photo" value="EmpID9.bmp"><br><br>
+
+        <h1>Optinal Info</h1>
+        Notes 
+        <textarea name="notes" rows="4" cols="50">
+            Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ
+        </textarea><br><br>
+        Preferred Shift <input type="checkbox" name="shift" value="Regular">Regular<br><br>
+        Active <input type="checkbox" name="active" value="Gravy Yard" checked>Gravy<br><br>
+        <input type="checkbox" value="" checked>
+        <br><br>
+
+        Are you human? 
+        <span>T I D A W O</span>
+        click to change <br>
+        <input type="text" name="captcha" value=""><br><br>
+
+
+        <button>&lt;</button>
+        <button>&gt;</button> <br>
+        requierd
+        <button type="submit">Save</button>
+        <button type="cancel">Cancel</button>
+
+    </form>
 </body>
 </html>
