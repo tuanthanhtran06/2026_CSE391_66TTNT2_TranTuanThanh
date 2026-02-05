@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-color: #f5f6fa;
+}
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #2f3640;
+    color: white;
+    gap: 40px;
+}
+.head .left a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+.head .right input[type="search"]{
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+.btn-search{
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f3640;
+    color: white;
+    cursor: pointer;
+}
+main .container{
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.btn-add{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f26a7;
+    color: rgb(159, 160, 165);
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-add a{
+    color: white;
+    text-decoration: none;
+}
+th{
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+th,td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.btn-edit {
+    background-color: #fbc531;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.btn-delete {
+    background-color: #e84118;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
