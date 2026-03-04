@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+  color: #222;
+}
+
+
+#main-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Font tiêu đề */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   MENU
+========================= */
+nav {
+  text-align: center;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a:hover {
+  color: #ff6600;
+  background-color: #eee;
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+
+.posts {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 0;
+}
+
+.card {
+  width: calc(33.333% - 20px);
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.card p {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+/* Responsive Grid */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  .posts {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #555;
+}
