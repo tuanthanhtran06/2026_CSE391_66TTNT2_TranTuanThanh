@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form nhiều bước</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Đăng ký</h2>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<form id="form">
+
+<!-- Bước 1 -->
+<div class="step" id="step1">
+
+<h3>Bước 1: Thông tin cá nhân</h3>
+
+<input type="text" id="fullname" placeholder="Họ tên">
+<br>
+
+<input type="date" id="birthday">
+<br>
+
+<select id="gender">
+<option value="">Chọn giới tính</option>
+<option>Nam</option>
+<option>Nữ</option>
+</select>
+
+<br><br>
+
+<button type="button" id="next1">Tiếp theo</button>
+
+</div>
+
+
+<!-- Bước 2 -->
+<div class="step" id="step2">
+
+<h3>Bước 2: Tài khoản</h3>
+
+<input type="text" id="email" placeholder="Email">
+<br>
+
+<input type="password" id="password" placeholder="Mật khẩu">
+<br>
+
+<input type="password" id="confirm" placeholder="Xác nhận mật khẩu">
+
+<br><br>
+
+<button type="button" id="back1">Quay lại</button>
+<button type="button" id="next2">Tiếp theo</button>
+
+</div>
+
+
+<!-- Bước 3 -->
+<div class="step" id="step3">
+
+<h3>Xác nhận thông tin</h3>
+
+<p id="summary"></p>
+
+<button type="button" id="back2">Quay lại</button>
+<button type="submit">Đăng ký</button>
+
+</div>
+
+</form>
+
+<script src="simple.js"></script>
+
+</body>
+</html>

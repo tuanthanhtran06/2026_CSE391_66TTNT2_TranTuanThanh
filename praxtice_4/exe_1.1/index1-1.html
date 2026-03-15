@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bảng điểm sinh viên</title>
+<link rel="stylesheet" href="style1-1.css">
+</head>
+
+<body>
+
+<h2>Quản lý điểm sinh viên</h2>
+
+<div class="form">
+    <input type="text" id="nameInput" placeholder="Nhập họ tên">
+    <input type="number" id="scoreInput" placeholder="Nhập điểm (0-10)">
+    <button id="addBtn">Thêm</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+   
+    <tbody id="tableBody">
+    </tbody>
+</table>
+
+<p id="stats"></p>
+
+
+ <script src="simple1-1.js"></script>  
+</body>
+</html>

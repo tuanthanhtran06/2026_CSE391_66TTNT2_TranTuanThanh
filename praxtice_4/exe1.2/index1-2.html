@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.2 - Bộ lọc và tìm kiếm</title>
+    <link rel="stylesheet" href="style1-2.css">
+</head>
+<body>
+    <h2>Danh sách sinh viên</h2>
+
+    <div class="form-group">
+        <input type="text" id="studentName" placeholder="Nhập họ tên">
+        <input type="number" id="studentScore" placeholder="Nhập điểm">
+        <button id="addBtn">Thêm</button>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên">
+        <select id="filterSelect">
+            <option value="all">Tất cả</option>
+            <option value="Giỏi">Giỏi</option>
+            <option value="Khá">Khá</option>
+            <option value="Trung bình">Trung bình</option>
+            <option value="Yếu">Yếu</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th id="scoreHeader" class="clickable">Điểm <span id="sortIcon"></span></th>
+                <th>Xếp loại</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+    <script src="simple1-2.js"></script>
+</body>
+</html>
